@@ -1,0 +1,88 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, "Times New Roman", Helvetica, sans-serif, Times, serif ;
+}
+
+h3{
+font-size: 175%;
+text-align: center;
+margin-top:20px;
+margin-bottom:40px;
+}
+
+article{
+  padding:13px;
+}
+
+div{
+  position: relative;
+}
+
+div > h4{
+  font-size: 150%;
+  position: absolute;
+  top:0;
+  right:0;
+  display:inline;
+  text-align:center;
+  padding: 5px 25px 5px 25px;
+  border:2px solid black;
+  margin:0;
+}
+
+div.chicken > h4{
+  background-color:pink;
+}
+
+div.beef > h4{
+  color:white;
+  background-color:maroon;
+}
+
+div.sushi > h4{
+  background-color:yellowgreen;
+}
+
+section{
+  text-align: left;
+  font-size: 125%;
+  background-color:#c08c3f;
+  border:2px solid black;
+  border-color:black;
+  padding:55px 16px 16px 16px;
+}
+
+#section2{
+  display: none;
+}
+
+@media screen and (min-width:992px){
+  article{
+    float: left;
+    width:33.33%;
+    padding:13px;
+  }
+}
+
+@media screen and (min-width:768px) and (max-width:991px){
+
+  #section1{
+    display: none;
+  }
+
+  article{
+    float: left;
+    width:50%;
+    padding:13px;
+  }
+
+  article.medium{
+    clear: left;
+    width: 100%;
+  }
+
+  #section2{
+    display: block;
+  }
+
+}
