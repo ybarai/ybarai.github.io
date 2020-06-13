@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  font-family: Arial, "Times New Roman", Helvetica, sans-serif, Times, serif ;
+  font-family: Georgia, Arial, "Times New Roman", serif ;
 }
 
 h3{
@@ -31,16 +31,16 @@ div > h4{
 }
 
 div.chicken > h4{
-  background-color:pink;
+  background-color:#ff99c2;
 }
 
 div.beef > h4{
   color:white;
-  background-color:maroon;
+  background-color:#e60000;
 }
 
 div.sushi > h4{
-  background-color:yellowgreen;
+  background-color:#ffd633;
 }
 
 section{
