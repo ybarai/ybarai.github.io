@@ -1,6 +1,36 @@
 * {
+  font-family: Georgia, Arial, "Times New Roman", serif ;
+}
+
+body{
+  padding:10px;
+  margin:0;
+  background-color:white;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  display: flex; /* "display: flex" - Displays an element as a block-level flex container. Here we used this to display list horizontally rather than vertically. */
+  width: 100%;
+  padding:0;
+}
+
+li{
+  position: relative;
   box-sizing: border-box;
-  font-family: Arial, "Times New Roman", Helvetica, sans-serif, Times, serif ;
+  display: list-item;
+  width: 33.33%
+  font-size: 125%;
+  background-color:#c08c3f;
+  border:10px solid white; /* Border set to white rather than using padding or margin of some other tag/element in html file. */
+  padding:55px 16px 16px 16px;
+  outline-offset: -12px;
+  outline:2px solid black;
+}
+
+#display2{
+  display: none;
 }
 
 h3{
@@ -10,15 +40,7 @@ margin-top:20px;
 margin-bottom:40px;
 }
 
-article{
-  padding:13px;
-}
-
-div{
-  position: relative;
-}
-
-div > h4{
+h4{
   font-size: 150%;
   position: absolute;
   top:0;
@@ -30,59 +52,40 @@ div > h4{
   margin:0;
 }
 
-div.chicken > h4{
-  background-color:pink;
+#chicken{
+  background-color:#ff99c2;
 }
 
-div.beef > h4{
+#beef{
   color:white;
-  background-color:maroon;
+  background-color:#e60000;
 }
 
-div.sushi > h4{
-  background-color:yellowgreen;
-}
-
-section{
-  text-align: left;
-  font-size: 125%;
-  background-color:#c08c3f;
-  border:2px solid black;
-  border-color:black;
-  padding:55px 16px 16px 16px;
-}
-
-#section2{
-  display: none;
-}
-
-@media screen and (min-width:992px){
-  article{
-    float: left;
-    width:33.33%;
-    padding:13px;
-  }
+#sushi{
+  background-color:#ffd633;
 }
 
 @media screen and (min-width:768px) and (max-width:991px){
-
-  #section1{
+  #display1{
     display: none;
   }
 
-  article{
-    float: left;
-    width:50%;
-    padding:13px;
-  }
-
-  article.medium{
-    clear: left;
-    width: 100%;
-  }
-
-  #section2{
+  #display2{
     display: block;
   }
 
+  li{
+    width: 50%;
+  }
+
+  li#display2{
+    width: 100%;
+  }
+}
+
+
+@media screen and (max-width:767px){
+  ul{
+    display: list-item; /* To make element behave like a <li> element */
+  }
 }
